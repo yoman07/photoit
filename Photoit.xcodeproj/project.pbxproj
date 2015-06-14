@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042A00204DC24F6EBC5F03B1 /* libPods-Photoit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC6C528C616E52F1B3886E2 /* libPods-Photoit.a */; };
+		395B69F21B2CB62000AFF5DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B69F11B2CB62000AFF5DE /* AppDelegate.swift */; };
+		395B69F51B2CB62100AFF5DE /* Photoit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 395B69F31B2CB62100AFF5DE /* Photoit.xcdatamodeld */; };
+		395B69FA1B2CB62100AFF5DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395B69F81B2CB62100AFF5DE /* Main.storyboard */; };
+		395B69FC1B2CB62100AFF5DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395B69FB1B2CB62100AFF5DE /* Images.xcassets */; };
+		395B69FF1B2CB62100AFF5DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395B69FD1B2CB62100AFF5DE /* LaunchScreen.xib */; };
+		395B6A0B1B2CB62100AFF5DE /* PhotoitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A0A1B2CB62100AFF5DE /* PhotoitTests.swift */; };
+		395B6A151B2CB7DD00AFF5DE /* PhotoItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A141B2CB7DD00AFF5DE /* PhotoItemsTableViewController.swift */; };
+		395B6A191B2CB96900AFF5DE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A181B2CB96900AFF5DE /* Item.swift */; };
+		395B6A241B2CBA0200AFF5DE /* PhotoItDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 395B6A231B2CBA0200AFF5DE /* PhotoItDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		395B6A2A1B2CBA0200AFF5DE /* PhotoItDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395B6A1F1B2CBA0200AFF5DE /* PhotoItDatabase.framework */; };
+		395B6A331B2CBA0300AFF5DE /* PhotoItDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A321B2CBA0300AFF5DE /* PhotoItDatabaseTests.swift */; };
+		395B6A361B2CBA0300AFF5DE /* PhotoItDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395B6A1F1B2CBA0200AFF5DE /* PhotoItDatabase.framework */; };
+		395B6A371B2CBA0300AFF5DE /* PhotoItDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 395B6A1F1B2CBA0200AFF5DE /* PhotoItDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		395B6A401B2CBA2D00AFF5DE /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A3F1B2CBA2D00AFF5DE /* CoreDataStore.swift */; };
+		395B6A431B2CBAA100AFF5DE /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A421B2CBAA100AFF5DE /* FileHelper.swift */; };
+		395B6A451B2CBB1A00AFF5DE /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A441B2CBB1A00AFF5DE /* DatabaseHelper.swift */; };
+		395B6A471B2CBCC400AFF5DE /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A461B2CBCC400AFF5DE /* DateHelper.swift */; };
+		395B6A4B1B2CBE7A00AFF5DE /* ItemPhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A491B2CBE7A00AFF5DE /* ItemPhotoViewCell.swift */; };
+		395B6A4C1B2CBE7A00AFF5DE /* ItemPhotoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 395B6A4A1B2CBE7A00AFF5DE /* ItemPhotoViewCell.xib */; };
+		395B6A4E1B2CBEA300AFF5DE /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395B6A4D1B2CBEA300AFF5DE /* FontHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		395B6A051B2CB62100AFF5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395B69E41B2CB62000AFF5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395B69EB1B2CB62000AFF5DE;
+			remoteInfo = Photoit;
+		};
+		395B6A2B1B2CBA0200AFF5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395B69E41B2CB62000AFF5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395B6A1E1B2CBA0200AFF5DE;
+			remoteInfo = PhotoItDatabase;
+		};
+		395B6A2D1B2CBA0200AFF5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395B69E41B2CB62000AFF5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395B69EB1B2CB62000AFF5DE;
+			remoteInfo = Photoit;
+		};
+		395B6A341B2CBA0300AFF5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395B69E41B2CB62000AFF5DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395B6A1E1B2CBA0200AFF5DE;
+			remoteInfo = PhotoItDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		395B6A3B1B2CBA0300AFF5DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				395B6A371B2CBA0300AFF5DE /* PhotoItDatabase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06294663CA9ACE5FD4A49CE8 /* Pods-Photoit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photoit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Photoit/Pods-Photoit.release.xcconfig"; sourceTree = "<group>"; };
+		395B69EC1B2CB62000AFF5DE /* Photoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		395B69F01B2CB62000AFF5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395B69F11B2CB62000AFF5DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		395B69F41B2CB62100AFF5DE /* Photoit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photoit.xcdatamodel; sourceTree = "<group>"; };
+		395B69F91B2CB62100AFF5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		395B69FB1B2CB62100AFF5DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		395B69FE1B2CB62100AFF5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		395B6A041B2CB62100AFF5DE /* PhotoitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		395B6A091B2CB62100AFF5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395B6A0A1B2CB62100AFF5DE /* PhotoitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoitTests.swift; sourceTree = "<group>"; };
+		395B6A141B2CB7DD00AFF5DE /* PhotoItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItemsTableViewController.swift; path = Controllers/PhotoItemsTableViewController.swift; sourceTree = "<group>"; };
+		395B6A181B2CB96900AFF5DE /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Models/Item.swift; sourceTree = "<group>"; };
+		395B6A1F1B2CBA0200AFF5DE /* PhotoItDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhotoItDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		395B6A221B2CBA0200AFF5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395B6A231B2CBA0200AFF5DE /* PhotoItDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoItDatabase.h; sourceTree = "<group>"; };
+		395B6A291B2CBA0200AFF5DE /* PhotoItDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoItDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		395B6A311B2CBA0300AFF5DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395B6A321B2CBA0300AFF5DE /* PhotoItDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItDatabaseTests.swift; sourceTree = "<group>"; };
+		395B6A3F1B2CBA2D00AFF5DE /* CoreDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		395B6A421B2CBAA100AFF5DE /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileHelper.swift; path = Helpers/FileHelper.swift; sourceTree = "<group>"; };
+		395B6A441B2CBB1A00AFF5DE /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DatabaseHelper.swift; path = Helpers/DatabaseHelper.swift; sourceTree = "<group>"; };
+		395B6A461B2CBCC400AFF5DE /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelper.swift; path = Helpers/DateHelper.swift; sourceTree = "<group>"; };
+		395B6A491B2CBE7A00AFF5DE /* ItemPhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPhotoViewCell.swift; sourceTree = "<group>"; };
+		395B6A4A1B2CBE7A00AFF5DE /* ItemPhotoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPhotoViewCell.xib; sourceTree = "<group>"; };
+		395B6A4D1B2CBEA300AFF5DE /* FontHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontHelper.swift; path = Helpers/FontHelper.swift; sourceTree = "<group>"; };
+		395B6A4F1B2CC00300AFF5DE /* Photoit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Photoit.entitlements; sourceTree = "<group>"; };
+		397F484C1B2DB97C004AD986 /* Pohotoit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pohotoit-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FC6C528C616E52F1B3886E2 /* libPods-Photoit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Photoit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB236AA3E1B8E58B648E8C3 /* Pods-Photoit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Photoit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Photoit/Pods-Photoit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		395B69E91B2CB62000AFF5DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A361B2CBA0300AFF5DE /* PhotoItDatabase.framework in Frameworks */,
+				042A00204DC24F6EBC5F03B1 /* libPods-Photoit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A011B2CB62100AFF5DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A1B1B2CBA0200AFF5DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A261B2CBA0200AFF5DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A2A1B2CBA0200AFF5DE /* PhotoItDatabase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		395B69E31B2CB62000AFF5DE = {
+			isa = PBXGroup;
+			children = (
+				397F484C1B2DB97C004AD986 /* Pohotoit-Bridging-Header.h */,
+				395B69EE1B2CB62000AFF5DE /* Photoit */,
+				395B6A071B2CB62100AFF5DE /* PhotoitTests */,
+				395B6A201B2CBA0200AFF5DE /* PhotoItDatabase */,
+				395B6A2F1B2CBA0200AFF5DE /* PhotoItDatabaseTests */,
+				395B69ED1B2CB62000AFF5DE /* Products */,
+				C3A61655988E7AF72ACADE88 /* Pods */,
+				EFF4BFD86F9E7F7931871D6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		395B69ED1B2CB62000AFF5DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				395B69EC1B2CB62000AFF5DE /* Photoit.app */,
+				395B6A041B2CB62100AFF5DE /* PhotoitTests.xctest */,
+				395B6A1F1B2CBA0200AFF5DE /* PhotoItDatabase.framework */,
+				395B6A291B2CBA0200AFF5DE /* PhotoItDatabaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		395B69EE1B2CB62000AFF5DE /* Photoit */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A4F1B2CC00300AFF5DE /* Photoit.entitlements */,
+				395B6A481B2CBE7A00AFF5DE /* Views */,
+				395B6A411B2CBA9300AFF5DE /* Helpers */,
+				395B6A161B2CB7E200AFF5DE /* Controllers */,
+				395B6A171B2CB96000AFF5DE /* Models */,
+				395B69F11B2CB62000AFF5DE /* AppDelegate.swift */,
+				395B69F81B2CB62100AFF5DE /* Main.storyboard */,
+				395B69FB1B2CB62100AFF5DE /* Images.xcassets */,
+				395B69FD1B2CB62100AFF5DE /* LaunchScreen.xib */,
+				395B69F31B2CB62100AFF5DE /* Photoit.xcdatamodeld */,
+				395B69EF1B2CB62000AFF5DE /* Supporting Files */,
+			);
+			path = Photoit;
+			sourceTree = "<group>";
+		};
+		395B69EF1B2CB62000AFF5DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395B69F01B2CB62000AFF5DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		395B6A071B2CB62100AFF5DE /* PhotoitTests */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A0A1B2CB62100AFF5DE /* PhotoitTests.swift */,
+				395B6A081B2CB62100AFF5DE /* Supporting Files */,
+			);
+			path = PhotoitTests;
+			sourceTree = "<group>";
+		};
+		395B6A081B2CB62100AFF5DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A091B2CB62100AFF5DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		395B6A161B2CB7E200AFF5DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A141B2CB7DD00AFF5DE /* PhotoItemsTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		395B6A171B2CB96000AFF5DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A181B2CB96900AFF5DE /* Item.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		395B6A201B2CBA0200AFF5DE /* PhotoItDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A231B2CBA0200AFF5DE /* PhotoItDatabase.h */,
+				395B6A211B2CBA0200AFF5DE /* Supporting Files */,
+				395B6A3F1B2CBA2D00AFF5DE /* CoreDataStore.swift */,
+			);
+			path = PhotoItDatabase;
+			sourceTree = "<group>";
+		};
+		395B6A211B2CBA0200AFF5DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A221B2CBA0200AFF5DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		395B6A2F1B2CBA0200AFF5DE /* PhotoItDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A321B2CBA0300AFF5DE /* PhotoItDatabaseTests.swift */,
+				395B6A301B2CBA0300AFF5DE /* Supporting Files */,
+			);
+			path = PhotoItDatabaseTests;
+			sourceTree = "<group>";
+		};
+		395B6A301B2CBA0300AFF5DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A311B2CBA0300AFF5DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		395B6A411B2CBA9300AFF5DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A421B2CBAA100AFF5DE /* FileHelper.swift */,
+				395B6A441B2CBB1A00AFF5DE /* DatabaseHelper.swift */,
+				395B6A461B2CBCC400AFF5DE /* DateHelper.swift */,
+				395B6A4D1B2CBEA300AFF5DE /* FontHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		395B6A481B2CBE7A00AFF5DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				395B6A491B2CBE7A00AFF5DE /* ItemPhotoViewCell.swift */,
+				395B6A4A1B2CBE7A00AFF5DE /* ItemPhotoViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3A61655988E7AF72ACADE88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFB236AA3E1B8E58B648E8C3 /* Pods-Photoit.debug.xcconfig */,
+				06294663CA9ACE5FD4A49CE8 /* Pods-Photoit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFF4BFD86F9E7F7931871D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FC6C528C616E52F1B3886E2 /* libPods-Photoit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		395B6A1C1B2CBA0200AFF5DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A241B2CBA0200AFF5DE /* PhotoItDatabase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		395B69EB1B2CB62000AFF5DE /* Photoit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395B6A0E1B2CB62100AFF5DE /* Build configuration list for PBXNativeTarget "Photoit" */;
+			buildPhases = (
+				B490905DFE08604AF59340E7 /* Check Pods Manifest.lock */,
+				395B69E81B2CB62000AFF5DE /* Sources */,
+				395B69E91B2CB62000AFF5DE /* Frameworks */,
+				395B69EA1B2CB62000AFF5DE /* Resources */,
+				395B6A3B1B2CBA0300AFF5DE /* Embed Frameworks */,
+				C0DD236F3E902AD0DFF5F5EF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395B6A351B2CBA0300AFF5DE /* PBXTargetDependency */,
+			);
+			name = Photoit;
+			productName = Photoit;
+			productReference = 395B69EC1B2CB62000AFF5DE /* Photoit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		395B6A031B2CB62100AFF5DE /* PhotoitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395B6A111B2CB62100AFF5DE /* Build configuration list for PBXNativeTarget "PhotoitTests" */;
+			buildPhases = (
+				395B6A001B2CB62100AFF5DE /* Sources */,
+				395B6A011B2CB62100AFF5DE /* Frameworks */,
+				395B6A021B2CB62100AFF5DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395B6A061B2CB62100AFF5DE /* PBXTargetDependency */,
+			);
+			name = PhotoitTests;
+			productName = PhotoitTests;
+			productReference = 395B6A041B2CB62100AFF5DE /* PhotoitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		395B6A1E1B2CBA0200AFF5DE /* PhotoItDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395B6A381B2CBA0300AFF5DE /* Build configuration list for PBXNativeTarget "PhotoItDatabase" */;
+			buildPhases = (
+				395B6A1A1B2CBA0200AFF5DE /* Sources */,
+				395B6A1B1B2CBA0200AFF5DE /* Frameworks */,
+				395B6A1C1B2CBA0200AFF5DE /* Headers */,
+				395B6A1D1B2CBA0200AFF5DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoItDatabase;
+			productName = PhotoItDatabase;
+			productReference = 395B6A1F1B2CBA0200AFF5DE /* PhotoItDatabase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		395B6A281B2CBA0200AFF5DE /* PhotoItDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395B6A3C1B2CBA0300AFF5DE /* Build configuration list for PBXNativeTarget "PhotoItDatabaseTests" */;
+			buildPhases = (
+				395B6A251B2CBA0200AFF5DE /* Sources */,
+				395B6A261B2CBA0200AFF5DE /* Frameworks */,
+				395B6A271B2CBA0200AFF5DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395B6A2C1B2CBA0200AFF5DE /* PBXTargetDependency */,
+				395B6A2E1B2CBA0200AFF5DE /* PBXTargetDependency */,
+			);
+			name = PhotoItDatabaseTests;
+			productName = PhotoItDatabaseTests;
+			productReference = 395B6A291B2CBA0200AFF5DE /* PhotoItDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		395B69E41B2CB62000AFF5DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Photoit;
+				TargetAttributes = {
+					395B69EB1B2CB62000AFF5DE = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = VK3PQPJ8YT;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					395B6A031B2CB62100AFF5DE = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 395B69EB1B2CB62000AFF5DE;
+					};
+					395B6A1E1B2CBA0200AFF5DE = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					395B6A281B2CBA0200AFF5DE = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 395B69EB1B2CB62000AFF5DE;
+					};
+				};
+			};
+			buildConfigurationList = 395B69E71B2CB62000AFF5DE /* Build configuration list for PBXProject "Photoit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 395B69E31B2CB62000AFF5DE;
+			productRefGroup = 395B69ED1B2CB62000AFF5DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				395B69EB1B2CB62000AFF5DE /* Photoit */,
+				395B6A031B2CB62100AFF5DE /* PhotoitTests */,
+				395B6A1E1B2CBA0200AFF5DE /* PhotoItDatabase */,
+				395B6A281B2CBA0200AFF5DE /* PhotoItDatabaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		395B69EA1B2CB62000AFF5DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B69FA1B2CB62100AFF5DE /* Main.storyboard in Resources */,
+				395B69FF1B2CB62100AFF5DE /* LaunchScreen.xib in Resources */,
+				395B6A4C1B2CBE7A00AFF5DE /* ItemPhotoViewCell.xib in Resources */,
+				395B69FC1B2CB62100AFF5DE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A021B2CB62100AFF5DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A1D1B2CBA0200AFF5DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A271B2CBA0200AFF5DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B490905DFE08604AF59340E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0DD236F3E902AD0DFF5F5EF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Photoit/Pods-Photoit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		395B69E81B2CB62000AFF5DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A191B2CB96900AFF5DE /* Item.swift in Sources */,
+				395B6A151B2CB7DD00AFF5DE /* PhotoItemsTableViewController.swift in Sources */,
+				395B69F21B2CB62000AFF5DE /* AppDelegate.swift in Sources */,
+				395B6A4E1B2CBEA300AFF5DE /* FontHelper.swift in Sources */,
+				395B69F51B2CB62100AFF5DE /* Photoit.xcdatamodeld in Sources */,
+				395B6A451B2CBB1A00AFF5DE /* DatabaseHelper.swift in Sources */,
+				395B6A471B2CBCC400AFF5DE /* DateHelper.swift in Sources */,
+				395B6A4B1B2CBE7A00AFF5DE /* ItemPhotoViewCell.swift in Sources */,
+				395B6A431B2CBAA100AFF5DE /* FileHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A001B2CB62100AFF5DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A0B1B2CB62100AFF5DE /* PhotoitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A1A1B2CBA0200AFF5DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A401B2CBA2D00AFF5DE /* CoreDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395B6A251B2CBA0200AFF5DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395B6A331B2CBA0300AFF5DE /* PhotoItDatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		395B6A061B2CB62100AFF5DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395B69EB1B2CB62000AFF5DE /* Photoit */;
+			targetProxy = 395B6A051B2CB62100AFF5DE /* PBXContainerItemProxy */;
+		};
+		395B6A2C1B2CBA0200AFF5DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395B6A1E1B2CBA0200AFF5DE /* PhotoItDatabase */;
+			targetProxy = 395B6A2B1B2CBA0200AFF5DE /* PBXContainerItemProxy */;
+		};
+		395B6A2E1B2CBA0200AFF5DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395B69EB1B2CB62000AFF5DE /* Photoit */;
+			targetProxy = 395B6A2D1B2CBA0200AFF5DE /* PBXContainerItemProxy */;
+		};
+		395B6A351B2CBA0300AFF5DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395B6A1E1B2CBA0200AFF5DE /* PhotoItDatabase */;
+			targetProxy = 395B6A341B2CBA0300AFF5DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		395B69F81B2CB62100AFF5DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395B69F91B2CB62100AFF5DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		395B69FD1B2CB62100AFF5DE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				395B69FE1B2CB62100AFF5DE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		395B6A0C1B2CB62100AFF5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		395B6A0D1B2CB62100AFF5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		395B6A0F1B2CB62100AFF5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFB236AA3E1B8E58B648E8C3 /* Pods-Photoit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Photoit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pohotoit-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		395B6A101B2CB62100AFF5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06294663CA9ACE5FD4A49CE8 /* Pods-Photoit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Photoit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pohotoit-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		395B6A121B2CB62100AFF5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photoit.app/Photoit";
+			};
+			name = Debug;
+		};
+		395B6A131B2CB62100AFF5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photoit.app/Photoit";
+			};
+			name = Release;
+		};
+		395B6A391B2CBA0300AFF5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoItDatabase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		395B6A3A1B2CBA0300AFF5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhotoItDatabase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		395B6A3D1B2CBA0300AFF5DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoItDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photoit.app/Photoit";
+			};
+			name = Debug;
+		};
+		395B6A3E1B2CBA0300AFF5DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoItDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photoit.app/Photoit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		395B69E71B2CB62000AFF5DE /* Build configuration list for PBXProject "Photoit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395B6A0C1B2CB62100AFF5DE /* Debug */,
+				395B6A0D1B2CB62100AFF5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395B6A0E1B2CB62100AFF5DE /* Build configuration list for PBXNativeTarget "Photoit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395B6A0F1B2CB62100AFF5DE /* Debug */,
+				395B6A101B2CB62100AFF5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395B6A111B2CB62100AFF5DE /* Build configuration list for PBXNativeTarget "PhotoitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395B6A121B2CB62100AFF5DE /* Debug */,
+				395B6A131B2CB62100AFF5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395B6A381B2CBA0300AFF5DE /* Build configuration list for PBXNativeTarget "PhotoItDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395B6A391B2CBA0300AFF5DE /* Debug */,
+				395B6A3A1B2CBA0300AFF5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		395B6A3C1B2CBA0300AFF5DE /* Build configuration list for PBXNativeTarget "PhotoItDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395B6A3D1B2CBA0300AFF5DE /* Debug */,
+				395B6A3E1B2CBA0300AFF5DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		395B69F31B2CB62100AFF5DE /* Photoit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				395B69F41B2CB62100AFF5DE /* Photoit.xcdatamodel */,
+			);
+			currentVersion = 395B69F41B2CB62100AFF5DE /* Photoit.xcdatamodel */;
+			path = Photoit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 395B69E41B2CB62000AFF5DE /* Project object */;
+}
